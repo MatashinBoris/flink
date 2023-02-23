@@ -15,7 +15,7 @@ public class FlinkService {
 
     private final FlinkKafkaConsumer011<String> flinkKafkaConsumer011;
 
-    @PostConstruct
+   // @PostConstruct
     @SneakyThrows
     public void handleKafkaMessages() {
 
@@ -38,7 +38,7 @@ public class FlinkService {
                 })
                 .print();
 
-        environment.execute();
+      //  environment.execute();
     }
 
 }
